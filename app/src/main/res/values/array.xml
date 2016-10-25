@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="months">
+        <item>January</item>
+        <item>Febuary</item>
+        <item>March</item>
+        <item>April</item>
+        <item>May</item>
+        <item>June</item>
+        <item>July</item>
+        <item>August</item>
+        <item>Sepetmber</item>
+        <item>October</item>
+        <item>Novemember</item>
+        <item>December</item>
+    </string-array>
+    <string-array  name="days">
+         <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+        <item>9</item>
+        <item>10</item>
+       <item>11</item>
+        <item>12</item>
+        <item>13</item>
+        <item>14</item>
+        <item>15</item>
+        <item>16</item>
+        <item>17</item>
+        <item>18</item>
+        <item>19</item>
+        <item>20</item>
+        <item>21</item>
+        <item>22</item>
+        <item>23</item>
+        <item>24</item>
+        <item>25</item>
+        <item>26</item>
+        <item>27</item>
+        <item>28</item>
+        <item>29</item>
+        <item>30</item>
+        <item>31</item>
+
+     </string-array>
+    <string-array name="Categories">
+        <item>Friend</item>
+        <item>Family</item>
+        <item>Relative</item>
+        <item>Colleague</item>
+        <item>Other</item>
+    </string-array>
+<string-array name="NotificationCheckList">
+    <!--<item>One Month Before</item>-->
+    <!--<item>One Week Before</item>-->
+    <item>One Day Before</item>
+    <item>One Hour Before</item>
+    <!--<item>15 Minutes Before</item>-->
+    <item>5 Minutes Before</item>
+</string-array>
+    <string-array name="messages">
+        <item>Happy birthday dear.May ur all d sorrows of ur life get blow with the blow you blow to blow the candles.And sweet memories like cake comes to ur life..Many Happy returns of the day.. </item>
+        <item>happy birthday to you .This year brings more happyest then past and fulfil all kinds of wishes</item>
+        <item>Happiness as light as air.LOVE as DEEP as OCEAN.Friends as solid as diamonds and success as bright as gold.These r my wishes 4 u today n everyday. </item>
+        <item>May your birthday and every day be filled with the warmth of sunshine, the happiness of smiles, the sounds of laughter, the feeling of love and the sharing of good cheer.</item>
+        <item>I hope you have a wonderful day and that the year ahead is filled with much love, many wonderful surprises and gives you lasting memories that you will cherish in all the days ahead. Happy Birthday.</item>
+        <item>On this special day, i wish you all the very best, all the joy you can ever have and may you be blessed abundantly today, tomorrow and the days to come! May you have a fantastic birthday and many more to come. HAPPY BIRTHDAY!!!!</item>
+        <item>You are special and I hope that you float through the day with a big smile on your face. Happy Birthday!</item>
+        <item>Well, you are another year older and you haven\'t changed a bit. That\'s great because you are perfect just the way you are. Happy Birthday</item>
+        <item>May this Year be the Best of your Life, until the Next One. Happy Birthday!</item>
+        <item>My Birthday Wish for You is that you continue to Love Life and Never Stop Dreaming.</item>
+        <item>Have a Magical Birthday with Love and Hugs. - Many Many Happy Birthday Wishes</item>
+        <item>May every Glowing Candle on your Cake transom into a Wish that will turn into Reality.Congratulations on your Birthday! - Happy Birthday </item>
+        <item>Forget the past, Look forward to the Future for the Best Things are Yet to Come. - Happy Birthday</item>
+        <item>I‘m so Lucky to have such a Fantastic Friend! - Many Many Happy Birthday Wishes to You..</item>
+        <item>You\'re such a Special Friend! It\'s a Pleasure to Remember you Anytime, Especially on your Birthday. Have a Great Day Ahead!</item>
+        <item>Have a wonderful, happy, healthy birthday now and forever. Happy Birthday!</item>
+        <item>I still remember the day I met like it was yesterday. I am the luckiest person to have friends like you and the date when you are born is a moment of great joy for me. It represents the day a very special person came to this world. Happy Birthday!</item>
+        <item>I just wanted to say Happy Birthday, and that I hope you have the best party ever.</item>
+        <item>Dad, you\'re the greatest. It\'s not just because you\'re there for me through good times and bad. It\'s also because you make the bad times good with your amazing love and support. Happy birthday!</item>
+        <item>Despite our arguments and our differences, you are still the most important person in my life. Happy birthday, sis!</item>
+        <item>Sure, you can pick your friends but not your family. But, Sis, I would have picked you as my sister and my friend. You’re the best sister and friend anyone can ever have. I love you. Happy birthday!</item>
+        <item>I must have been an amazing person in another life because I found an amazing girlfriend like you in this life. I\'m so in love with you! Happy birthday!</item>
+        <item>Happy birthday! I love your eyes. I love your smile. I love your neck. I love your hands. I love your nose. I love, everything about you. You’re why I have so much love in my heart.</item>
+        <item>Wishing the best of everything because you\'re the best. I love you. Happy birthday, sweetie!</item>
+        <item>Most of the time, it\'s hard for me to show how I feel about you. But it\'s your birthday and I want it to be special, so I will at least try to express my true feelings. Luckily, I found the perfect words, I love you!</item>
+        <item>Happy birthday to you, may you have a long and successful career.</item>
+        <item>Thanks for your leadership, guidance and support through the years. Happy birthday.</item>
+        <item>For every year of my life, you\'ve easily won the “Best Mother of the Year” Award. No one comes even within a mile of your winning ways. Wishing you a birthday as great as you are, Mom.</item>
+        <item>Happy Birthday to our beloved daughter. May you be blessed with all the good things you deserve.</item>
+        <item>I thank God everyday for the wonderful blessing he has bestowed upon your mother and me. Happy birthday son, I hope it is your best day ever</item>
+    </string-array>
+</resources>
