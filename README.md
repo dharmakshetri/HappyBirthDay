@@ -8,6 +8,12 @@ Birthday remainder application
 
 ● Managing to send message and send email also provides the birthday messages ,which allows to set  notification when someone's birthday coming near future.
 
+#Cloning
+If you're only interested in the HappyBirthDay download source code and use them for your own use:
+
+    git clone https://github.com/dharmakshetri/HappyBirthDay.git
+
+
 
 #Download From Google Play Store [Download](https://play.google.com/store/apps/details?id=co.happybirthday)
 
