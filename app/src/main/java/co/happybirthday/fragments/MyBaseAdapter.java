@@ -12,6 +12,7 @@ import android.widget.TextView;
 import java.util.ArrayList;
 
 import co.happybirthday.Birthday;
+import co.happybirthday.R;
 
 
 public class MyBaseAdapter extends BaseAdapter {
@@ -61,10 +62,7 @@ public class MyBaseAdapter extends BaseAdapter {
         }
 
         //ListData currentListData = getItem(position);
-
-
         Birthday.getTimes();
-
 
         String date=birthdayList.get(position).date.toString();
         String [] splitArray=date.split("-");

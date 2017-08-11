@@ -18,7 +18,7 @@ import co.happybirthday.Birthday;
 import co.happybirthday.BirthdayDetails;
 import co.happybirthday.Common;
 import co.happybirthday.R;
-import co.happybirthday.Student;
+
 import co.happybirthday.BirthdayRepo;
 
 public class OtherFragment extends Fragment implements OnItemClickListener {
@@ -64,8 +64,6 @@ public class OtherFragment extends Fragment implements OnItemClickListener {
 
     protected void showToast(String product) {
         Toast.makeText(getActivity(), product, Toast.LENGTH_SHORT).show();
-        // TODO Auto-generated method stub
-
     }
 
 }

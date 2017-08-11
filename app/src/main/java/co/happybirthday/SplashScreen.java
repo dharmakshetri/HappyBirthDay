@@ -23,9 +23,6 @@ public class SplashScreen extends AppCompatActivity {
         public  void run(){
             try {
                 Log.e("SplashScreen", "SplashScreen+ " + Message.listMesssages.size());
-//                if(Message.listMesssages.size()>0){
-//                    Message.listMesssages.clear();
-//                }
                 Message.insertMesssages(getApplicationContext());
                 //Log.e("SplashScreen", "SplashScreen++++ ");
             sleep(700);

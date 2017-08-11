@@ -23,7 +23,6 @@ import co.happybirthday.BirthdayDetails;
 import co.happybirthday.BirthdayRepo;
 import co.happybirthday.Common;
 import co.happybirthday.R;
-import co.happybirthday.Student;
 import co.happybirthday.notification.ScheduleClient;
 
 

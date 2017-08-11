@@ -72,6 +72,7 @@ public class BirthdaysAdd extends AppCompatActivity {
     private CountDownTimer mCountDownTimer;
     private boolean mGameIsInProgress;
     private long mTimerMilliseconds;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

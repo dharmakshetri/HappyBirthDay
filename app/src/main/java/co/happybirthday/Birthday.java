@@ -43,7 +43,7 @@ public class Birthday {
 
 
     public int birthday_ID;
-    public String name;
+    public static String name;
     public String email;
     public String mobile;
     public String date;

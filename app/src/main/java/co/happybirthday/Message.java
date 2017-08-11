@@ -41,7 +41,6 @@ public class Message {
 
     public static void  insertMesssages(Context mcontext){
 
-        Log.e("ME", "insertMesssages+ " + " " + Message.listMesssages.size());
         MessageRepo messageRepo= new MessageRepo(mcontext);
 
         for (int i=0; i<Message.listMesssages.size();i++){

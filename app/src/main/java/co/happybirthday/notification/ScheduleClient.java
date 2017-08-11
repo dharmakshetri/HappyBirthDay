@@ -8,8 +8,6 @@ import android.os.IBinder;
 
 import java.util.Calendar;
 
-import co.happybirthday.Student;
-
 /**
  * This is our service client, it is the 'middle-man' between the
  * service and any activity that wants to connect to the service

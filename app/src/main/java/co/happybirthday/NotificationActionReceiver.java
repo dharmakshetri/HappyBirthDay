@@ -13,7 +13,7 @@ public class NotificationActionReceiver extends WakefulBroadcastReceiver {
     @Override
     public void onReceive(Context context, Intent intent) {
         String action = intent.getStringExtra("action");
-        Log.e("action","action="+action);
+
         int id = intent.getIntExtra("id", 0);
           switch (action) {
             case "Wish":

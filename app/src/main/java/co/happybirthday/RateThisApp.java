@@ -152,10 +152,10 @@ public class RateThisApp {
 
     private static void printStatus(final Context context) {
         SharedPreferences pref = context.getSharedPreferences(PREF_NAME, Context.MODE_PRIVATE);
-        log("*** RateThisApp Status ***");
+        /*log("*** RateThisApp Status ***");
         log("Install Date: " + new Date(pref.getLong(KEY_INSTALL_DATE, 0)));
         log("Launch Times: " + pref.getInt(KEY_LAUNCH_TIMES, 0));
-        log("Opt out: " + pref.getBoolean(KEY_OPT_OUT, false));
+        log("Opt out: " + pref.getBoolean(KEY_OPT_OUT, false));*/
     }
 
 

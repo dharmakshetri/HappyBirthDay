@@ -57,7 +57,7 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        Log.e("Main Activity", "Main Activity");
+
         //setNotification(bid);
         toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
@@ -68,7 +68,7 @@ public class MainActivity extends AppCompatActivity {
         Birthday.arrayDays = getResources().getStringArray(R.array.days);
         String[] arrayNotificationCheckList = getResources().getStringArray(R.array.NotificationCheckList);
         Birthday.arrayNotificationCheckList = Arrays.asList(arrayNotificationCheckList);
-        Log.e("NOTIFICATION", "List of Notification=" + Birthday.arrayNotificationCheckList.size());
+
 
         viewPager = (ViewPager) findViewById(R.id.viewpager);
         setupViewPager(viewPager);
@@ -183,9 +183,7 @@ public class MainActivity extends AppCompatActivity {
         long secondsPassed = passed / 1000;
         long minPassed = secondsPassed / 60;
         long hourpassed = minPassed / 60;
-        System.out.println("midNight: " + midNight);
-        System.out.println("passed: " + passed);
-        System.out.println("hourpassed: " + hourpassed);
+
         for (int i = 0; i < studentsList.size(); i++) {
             String strDate = studentsList.get(i).date.toString();
             String[] splitArray = strDate.split("-");
@@ -221,7 +219,6 @@ public class MainActivity extends AppCompatActivity {
     public Action getIndexApiAction() {
         Thing object = new Thing.Builder()
                 .setName("Main Page") // TODO: Define a title for the content shown.
-                // TODO: Make sure this auto-generated URL is correct.
                 .setUrl(Uri.parse("http://[ENTER-YOUR-URL-HERE]"))
                 .build();
         return new Action.Builder(Action.TYPE_VIEW)

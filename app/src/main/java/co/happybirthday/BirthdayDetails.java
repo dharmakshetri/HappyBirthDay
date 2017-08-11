@@ -42,7 +42,6 @@ public class BirthdayDetails extends AppCompatActivity implements OnClickListene
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.birthdaydetails);
-        Log.e("BirthdayDetails", "BirthdayDetails= " + Message.listMesssages.size());
 
         Intent intent = getIntent();
         Bundle extras = intent.getExtras();
@@ -51,14 +50,9 @@ public class BirthdayDetails extends AppCompatActivity implements OnClickListene
             {
                 // extract the extra-data in the Notification
                 birthDayId = extras.getInt(Birthday.KEY_ID);
-                Log.e("BirthdayDetails", "Student.KEY_ID birthDayId= " + birthDayId);
-
-
             }
         }
 
-        //birthDayId = intent.getIntExtra(Student.KEY_ID, 1110);
-        Log.e("BirthDay ID", "Clicked birth day id=" + birthDayId);
         BirthdayRepo birthdayRepo = new BirthdayRepo(this);
         birthday = birthdayRepo.getStudentById(birthDayId);
         getSupportActionBar().setTitle(Birthday.name+" Details");
@@ -267,8 +261,6 @@ public class BirthdayDetails extends AppCompatActivity implements OnClickListene
         }
     }
 protected void sendSMSMessage(String phoneNo, String message) {
-    Log.e("Send SMS", "phoneNo="+phoneNo);
-    Log.e("Send SMS", "message="+message);
     try {
         SmsManager smsManager = SmsManager.getDefault();
         smsManager.sendTextMessage(phoneNo, null, message, null, null);
@@ -283,12 +275,8 @@ protected void sendSMSMessage(String phoneNo, String message) {
     //sendEmail
 
     public void sendEmail(String toEmail, String message){
-        Log.i("Send email", "");
         String[] TO = {toEmail};
        // String[] CC = {""};
-
-
-
         Intent emailIntent = new Intent(Intent.ACTION_SEND);
 
         emailIntent.setData(Uri.parse("mailto:"));

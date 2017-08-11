@@ -8,7 +8,6 @@ import android.util.Log;
 
 import java.util.Calendar;
 
-import co.happybirthday.Student;
 
 public class ScheduleService extends Service {
 

@@ -22,12 +22,12 @@ public class MessageRepo {
 
         SQLiteDatabase db = dbHelper.getWritableDatabase();
         ContentValues values = new ContentValues();
-        Log.e(""," message.messageName="+message.messageName);
+
         values.put(Message.KEY_name, message.messageName);
-        Log.e("", " message.values=" + values.size());
+
         // Inserting Row
         long mId = db.insert(Message.TABLE_MESSAGE, null, values);
-        Log.e(""," mId="+mId);
+
         db.close(); // Closing database connection
         return (int) mId;
     }
