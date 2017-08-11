@@ -71,7 +71,7 @@ public class MyBaseAdapter extends BaseAdapter {
         int birthMonth=Integer.parseInt(splitArray[0].toString());
         int birthDay=Integer.parseInt(splitArray[1].toString());
 
-        Log.e("%%%%%%%%","##############################");
+
         int differenceMonth=Birthday.currentMonth-birthMonth;
         int differenceDay=Birthday.currentDay-birthDay;
         //Student.currentMonth=6;

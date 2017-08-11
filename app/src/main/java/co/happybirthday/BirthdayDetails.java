@@ -34,7 +34,7 @@ public class BirthdayDetails extends AppCompatActivity implements OnClickListene
     TextView tvMessage;
     EditText editMessage;
     String messageType="";
-    String textSubject="Happy Birthday to you";
+    String textSubject="Happy Birthday to You!!!";
     String textMessage="";
     ImageView imgFav;
     int flagFav=0;
@@ -176,12 +176,12 @@ public class BirthdayDetails extends AppCompatActivity implements OnClickListene
                 }
                 if(messageType.length()>0){
                     BirthdayRepo birthdayRepo = new BirthdayRepo(getApplicationContext());
-                    Birthday student= new Birthday();
-                    student= birthdayRepo.getStudentById(birthDayId);
-                    if(student.mobile.length()==0){
+                    Birthday birthdayBoy= new Birthday();
+                    birthdayBoy= birthdayRepo.getStudentById(birthDayId);
+                    if(birthdayBoy.mobile.length()==0){
                         Toast.makeText(BirthdayDetails.this, "Mobile Number is not provided", Toast.LENGTH_SHORT).show();
                     }else {
-                        sendSmsBySIntent(student.mobile,textMessage);
+                        sendSmsBySIntent(birthdayBoy.mobile,textMessage+" "+tvName.getText().toString()+" !!!");
                     }
                 }else{
                     Toast.makeText(BirthdayDetails.this, "Please choose birthday message", Toast.LENGTH_SHORT).show();
@@ -237,7 +237,7 @@ public class BirthdayDetails extends AppCompatActivity implements OnClickListene
 
         // Add data to the intent, the receiving app will decide
         // what to do with it.
-        share.putExtra(Intent.EXTRA_SUBJECT, textSubject);
+        share.putExtra(Intent.EXTRA_SUBJECT, textSubject +birthday.name);
         share.putExtra(Intent.EXTRA_TEXT, messsage);
 
         startActivity(Intent.createChooser(share, "Share Messages!"));
@@ -283,7 +283,7 @@ protected void sendSMSMessage(String phoneNo, String message) {
         emailIntent.setType("text/plain");
         emailIntent.putExtra(Intent.EXTRA_EMAIL, TO);
        // emailIntent.putExtra(Intent.EXTRA_CC, CC);
-        emailIntent.putExtra(Intent.EXTRA_SUBJECT, textSubject);
+        emailIntent.putExtra(Intent.EXTRA_SUBJECT, textSubject+birthday.name);
         emailIntent.putExtra(Intent.EXTRA_TEXT, message);
 
         try {

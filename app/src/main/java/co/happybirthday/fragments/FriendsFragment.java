@@ -43,7 +43,7 @@ public class FriendsFragment extends Fragment implements OnItemClickListener {
                              Bundle savedInstanceState) {
        //Log.e("FriendsFragment", " onCreateView=>");
         // Inflate the layout for this fragment
-        View view =  inflater.inflate(R.layout.fragment_allothers,
+        View view =  inflater.inflate(R.layout.fragment_all,
                 container, false);
         Common.loadAd(view);
         BirthdayRepo birthdayRepo = new BirthdayRepo(getActivity());

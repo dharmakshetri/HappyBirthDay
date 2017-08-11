@@ -211,7 +211,7 @@ public class BirthdaysAdd extends AppCompatActivity {
             for (String fav : arrayList) {
                 favList.add(Integer.parseInt(fav.trim()));
             }
-            Log.e("NOTI", "count=" + count);
+
             // thumbnailsselection[id] = false;
             for (int i = 0; i < favList.size(); i++) {
                 for (int j = 0; j < count; j++) {
@@ -373,18 +373,18 @@ public class BirthdaysAdd extends AppCompatActivity {
     }
 
     public static void doBackUp() {
-        Log.e("IMPORTin","doBackUp=");
+
         try {
             if (Environment.MEDIA_MOUNTED.equals(Environment
                     .getExternalStorageState())) {
                 File folder = new File(Environment.getExternalStorageDirectory()
                         + "/BD/DB_Backup/");
                 boolean success = true;
-                Log.e("IMPORTin","success=--"+success);
+
                 if (!folder.exists()) {
                     success = folder.mkdir();
                 }
-                Log.e("IMPORTin","success="+success);
+
                 Time now = new Time();
                 now.setToNow();
                 if (success) {

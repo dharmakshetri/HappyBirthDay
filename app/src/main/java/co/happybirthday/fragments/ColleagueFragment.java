@@ -38,7 +38,7 @@ public class ColleagueFragment extends Fragment implements OnItemClickListener {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-        View view =  inflater.inflate(R.layout.fragment_allothers,
+        View view =  inflater.inflate(R.layout.fragment_all,
                 container, false);
         Common.loadAd(view);
         BirthdayRepo birthdayRepo = new BirthdayRepo(getActivity());

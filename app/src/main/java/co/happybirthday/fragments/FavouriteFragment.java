@@ -41,7 +41,7 @@ public class FavouriteFragment extends Fragment implements OnItemClickListener {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-        View view = inflater.inflate(R.layout.fragment_fav,
+        View view = inflater.inflate(R.layout.fragment_all,
                 container, false);
         Common.loadAd(view);
         BirthdayRepo birthdayRepo = new BirthdayRepo(getActivity());
@@ -49,14 +49,13 @@ public class FavouriteFragment extends Fragment implements OnItemClickListener {
         birthdayList = new ArrayList<Birthday>();
         birthdayList = birthdayRepo.getFavouriteBirthDay();
         Log.e("FAV", "Favourite =>" + birthdayList.size());
-        listViewFav = (ListView) view.findViewById(R.id.listViewFav);
+        listViewFav = (ListView) view.findViewById(R.id.listViewAll);
         birthDayAdapter = new MyBaseAdapter(getActivity(), birthdayList);
         listViewFav.setAdapter(birthDayAdapter);
         listViewFav.setOnItemClickListener(this);
         TextView emptyText = (TextView)view.findViewById(android.R.id.empty);
         listViewFav.setEmptyView(emptyText);
         // Inflate the layout for this fragment
-
 
         return view;
     }
