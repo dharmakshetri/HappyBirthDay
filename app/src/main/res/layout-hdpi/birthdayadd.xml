@@ -11,8 +11,8 @@
         android:layout_alignParentTop="true"
         android:layout_marginLeft="@dimen/text_margin"
         android:layout_marginRight="@dimen/text_margin"
-        android:layout_marginTop="@dimen/text_left_right_margin"
-        android:layout_marginBottom="@dimen/text_left_right_margin"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
         android:orientation="horizontal">
 
         <EditText
@@ -32,7 +32,8 @@
         android:layout_below="@+id/linearLayoutName"
         android:layout_marginLeft="@dimen/text_margin"
         android:layout_marginRight="@dimen/text_margin"
-        android:layout_marginTop="@dimen/text_left_right_margin" android:layout_marginBottom="@dimen/text_left_right_margin"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
         android:orientation="horizontal">
 
         <LinearLayout
@@ -67,7 +68,8 @@
         android:layout_below="@+id/linearLayoutMobileNumber"
         android:layout_marginLeft="@dimen/text_margin"
         android:layout_marginRight="@dimen/text_margin"
-        android:layout_marginTop="@dimen/text_left_right_margin" android:layout_marginBottom="@dimen/text_left_right_margin"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
         android:orientation="horizontal">
 
         <TextView
@@ -110,7 +112,6 @@
         android:layout_below="@+id/linearLayoutEmail"
         android:layout_marginLeft="@dimen/text_left_right_margin"
         android:layout_marginRight="@dimen/text_left_right_margin"
-        android:layout_marginTop="@dimen/text_margin"
         android:background="@android:color/darker_gray"></View>
 
     <LinearLayout
@@ -119,8 +120,9 @@
         android:layout_height="wrap_content"
         android:layout_below="@+id/view01"
         android:layout_marginLeft="@dimen/text_margin"
-        android:layout_marginRight="@dimen/text_margin" android:layout_marginBottom="@dimen/text_left_right_margin"
-        android:layout_marginTop="@dimen/text_left_right_margin"
+        android:layout_marginRight="@dimen/text_margin"
+        android:layout_marginBottom="5dp"
+        android:layout_marginTop="5dp"
         android:gravity="center_horizontal"
         android:orientation="horizontal">
 
@@ -158,8 +160,9 @@
         android:layout_height="wrap_content"
         android:layout_below="@+id/view00"
         android:layout_marginLeft="@dimen/text_margin"
-        android:layout_marginRight="@dimen/text_margin" android:layout_marginBottom="@dimen/text_left_right_margin"
-        android:layout_marginTop="@dimen/text_left_right_margin"
+        android:layout_marginRight="@dimen/text_margin"
+        android:layout_marginBottom="5dp"
+        android:layout_marginTop="5dp"
         android:gravity="center_horizontal"
         android:orientation="horizontal">
 
@@ -198,9 +201,10 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@+id/view0"
-        android:layout_marginLeft="5dp" android:layout_marginBottom="@dimen/text_left_right_margin"
+        android:layout_marginLeft="5dp"
+        android:layout_marginBottom="5dp"
         android:layout_marginRight="5dp"
-        android:layout_marginTop="@dimen/text_left_right_margin"
+        android:layout_marginTop="5dp"
         android:orientation="horizontal"
         android:weightSum="1">
 
@@ -298,5 +302,8 @@
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
         android:onClick="click"
+        android:textColor="@color/white"
+        android:layout_marginBottom="5dp"
+        android:background="@color/colorPrimaryDark"
         android:text="@string/remindme" />
 </RelativeLayout>

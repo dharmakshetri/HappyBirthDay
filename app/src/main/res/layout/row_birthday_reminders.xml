@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="fill_parent"  android:layout_margin="10dp"
+    android:layout_width="fill_parent"
+    android:layout_margin="10dp"
     android:layout_height="fill_parent">
 
     <TextView
@@ -9,6 +10,7 @@
         android:layout_height="wrap_content"
         android:layout_alignParentLeft="true"
         android:text="sample text"
+        android:textColor="@color/black"
         android:textAppearance="?android:attr/textAppearanceMedium" />
 
     <CheckBox

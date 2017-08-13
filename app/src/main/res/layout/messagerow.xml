@@ -6,7 +6,7 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"  android:weightSum="1"
-        android:background="@android:color/holo_green_light"
+        android:background="@color/colorPrimary"
         android:orientation="horizontal">
 
             <TextView
@@ -17,7 +17,7 @@
                 android:text="Ram"
                 android:layout_margin="@dimen/text_margin"
                 android:textColor="@android:color/white"
-                android:textSize="@dimen/text_size_12"
+                android:textSize="16sp"
                  />
 </LinearLayout>
 

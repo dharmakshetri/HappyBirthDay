@@ -299,5 +299,8 @@
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
         android:onClick="click"
+        android:textColor="@color/white"
+        android:layout_marginBottom="5dp"
+        android:background="@color/colorPrimaryDark"
         android:text="@string/remindme" />
 </RelativeLayout>

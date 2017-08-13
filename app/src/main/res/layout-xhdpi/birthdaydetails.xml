@@ -56,6 +56,10 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/edit"
+            android:textColor="@color/white"
+            android:padding="5dp"
+            android:layout_margin="5dp"
+            android:background="@color/colorPrimaryDark"
             android:visibility="visible" />
     </LinearLayout>
 
@@ -104,6 +108,10 @@
             android:layout_alignParentRight="true"
             android:layout_below="@+id/linearLayout"
             android:text="edit message"
+            android:textColor="@color/white"
+            android:padding="5sp"
+            android:layout_margin="5dp"
+            android:background="@color/colorPrimaryDark"
             android:visibility="gone" />
 
     </RelativeLayout>
@@ -131,6 +139,9 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight=".33"
+            android:textColor="@color/white"
+            android:layout_margin="5dp"
+            android:background="@color/colorPrimaryDark"
             android:text="@string/email" />
 
         <Button
@@ -138,6 +149,9 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight=".33"
+            android:textColor="@color/white"
+            android:layout_margin="5dp"
+            android:background="@color/colorPrimaryDark"
             android:text="@string/message" />
 
         <Button
@@ -145,6 +159,9 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight=".33"
+            android:textColor="@color/white"
+            android:layout_margin="5dp"
+            android:background="@color/colorPrimaryDark"
             android:text="@string/share" />
     </LinearLayout>
 

@@ -201,16 +201,6 @@ public class Birthday {
         int CurrentDayOfYear = localCalendar.get(Calendar.DAY_OF_YEAR);
         daysInMonth = localCalendar.getActualMaximum(Calendar.DAY_OF_MONTH);
 
-        System.out.println("Current Date and time details in local timezone");
-        System.out.println("Current Date: " + currentTime);
-        System.out.println("Current Day: " + currentDay);
-        System.out.println("Current Month: " + currentMonth);
-        System.out.println("Current Year: " + currentYear);
-        System.out.println("Current Day of Week: " + currentDayOfWeek);
-        System.out.println("Current Day of Month: " + currentDayOfMonth);
-        System.out.println("Current Day of Year: " + CurrentDayOfYear);
-
-
         //getting time, date, day of week and other details in GMT timezone
         Calendar gmtCalendar = Calendar.getInstance(TimeZone.getTimeZone("GMT"));
 
