@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/txtName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="@dimen/text_margin"
+        android:textSize="@dimen/textSize"
+        android:text="Ram Prasad"
+        android:textAppearance="@android:style/TextAppearance.DeviceDefault.Large"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/txtBirthDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtName"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="@dimen/text_margin"  android:textSize="@dimen/textSize"
+        android:text="BirthDay 28 January"
+        android:textAppearance="@android:style/TextAppearance.DeviceDefault.Large" />
+
+    <TextView
+        android:id="@+id/txtRTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtBirthDate"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="@dimen/text_margin"
+        android:visibility="gone"
+        android:text="12 Days 4 hours"
+        android:textAppearance="@android:style/TextAppearance.DeviceDefault.Large" />
+
+    <LinearLayout
+        android:id="@+id/linearLayoutFav"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" android:layout_alignParentRight="true"
+        android:layout_below="@+id/txtRTime" android:layout_marginRight="10dp"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/imgFav"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" android:layout_gravity="center_vertical"
+            android:layout_centerVertical="true" android:layout_marginRight="@dimen/text_left_right_margin"
+            android:background="@drawable/nofav_32"
+            android:visibility="visible" />
+
+        <Button
+            android:id="@+id/btnEdit"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:text="@string/edit"
+            android:textColor="@color/white"
+            android:padding="5sp"
+            android:layout_margin="5dp"
+            android:textSize="12sp"
+            android:background="@color/colorPrimaryDark"
+            android:visibility="visible" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/linearLayoutFav"
+        android:layout_marginBottom="@dimen/margin_bottom"
+        android:layout_marginLeft="@dimen/text_left_right_margin"
+        android:layout_marginRight="@dimen/text_left_right_margin"
+        android:layout_margin="@dimen/text_margin">
+
+
+        <LinearLayout
+            android:id="@+id/linearLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tvMessages"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="ram name"
+                android:textSize="@dimen/activity_vertical_margin"
+                android:visibility="gone" />
+
+            <EditText
+                android:id="@+id/editMessage"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="top|left"
+                android:inputType="textMultiLine"
+                android:lines="15"
+                android:maxLines="16"
+                android:minLines="12"
+                android:scrollbars="vertical"
+                android:textSize="18sp"
+                android:visibility="gone" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btnEditMessage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/linearLayout"
+            android:text="edit message"
+            android:textColor="@color/white"
+            android:padding="5sp"
+            android:layout_margin="5dp"
+            android:background="@color/colorPrimaryDark"
+            android:visibility="gone" />
+
+    </RelativeLayout>
+
+    <ListView
+        android:id="@+id/listmessage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/linearLayoutFav"
+        android:layout_marginBottom="@dimen/margin_bottom"
+        android:layout_marginLeft="@dimen/text_left_right_margin"
+        android:layout_marginRight="@dimen/text_left_right_margin"
+        android:visibility="visible"></ListView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal"
+        android:weightSum="1">
+
+        <Button
+            android:id="@+id/btnEmail"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_weight=".33"
+            android:textColor="@color/white"
+            android:layout_marginBottom="5dp"
+            android:layout_margin="5dp"
+            android:background="@color/colorPrimaryDark"
+            android:text="@string/email" />
+
+        <Button
+            android:id="@+id/btnMessage"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_weight=".33"
+            android:textColor="@color/white"
+            android:layout_marginBottom="5dp"
+            android:layout_margin="5dp"
+            android:background="@color/colorPrimaryDark"
+            android:text="@string/message" />
+
+        <Button
+            android:id="@+id/btnShare"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_weight=".33"
+            android:textColor="@color/white"
+            android:layout_marginBottom="5dp"
+            android:layout_margin="5dp"
+            android:background="@color/colorPrimaryDark"
+            android:text="@string/share" />
+    </LinearLayout>
+
+</RelativeLayout>

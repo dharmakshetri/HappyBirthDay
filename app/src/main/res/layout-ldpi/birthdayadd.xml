@@ -1,0 +1,310 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/linearLayoutName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="@dimen/text_margin"
+        android:layout_marginRight="@dimen/text_margin"
+        android:layout_marginTop="7dp"
+        android:layout_marginBottom="7dp"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/etName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/text_margin"
+            android:layout_marginRight="@dimen/text_margin"
+            android:hint="@string/name" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayoutMobileNumber"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/linearLayoutName"
+        android:layout_marginLeft="@dimen/text_margin"
+        android:layout_marginRight="@dimen/text_margin"
+        android:layout_marginTop="7dp"
+        android:layout_marginBottom="7dp"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:id="@+id/linearLayoutMobileBack"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/text_margin"
+            android:layout_marginRight="@dimen/text_margin"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/etMobile"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/mobile"
+                android:inputType="phone" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/mobileremindermessage"
+                android:textSize="12sp"
+                android:textStyle="italic" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayoutEmail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/linearLayoutMobileNumber"
+        android:layout_marginLeft="@dimen/text_margin"
+        android:layout_marginRight="@dimen/text_margin"
+        android:layout_marginTop="7dp"
+        android:layout_marginBottom="7dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/text_margin"
+            android:text="@string/email"
+            android:visibility="gone" />
+
+        <LinearLayout
+            android:id="@+id/linearLayoutEmailBack"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/text_margin"
+            android:layout_marginRight="@dimen/text_margin"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/etEmail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:hint="@string/email"
+                android:inputType="textEmailAddress" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/emialremindermessage"
+                android:textSize="12sp"
+                android:textStyle="italic" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <View
+        android:id="@+id/view01"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@+id/linearLayoutEmail"
+        android:layout_marginLeft="@dimen/text_left_right_margin"
+        android:layout_marginRight="@dimen/text_left_right_margin"
+        android:layout_marginTop="7dp"
+        android:background="@android:color/darker_gray"></View>
+
+    <LinearLayout
+        android:id="@+id/linearLayoutFav"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/view01"
+        android:layout_marginLeft="@dimen/text_margin"
+        android:layout_marginRight="@dimen/text_margin"
+        android:layout_marginBottom="7sp"
+        android:layout_marginTop="7sp"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/text_margin"
+            android:layout_marginRight="25dp"
+            android:text="Make Favourite"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            android:visibility="visible" />
+
+        <ImageView
+            android:id="@+id/imageViewFav"
+            android:layout_width="wrap_content"   android:layout_marginLeft="25dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/nofav_32"> </ImageView>
+
+    </LinearLayout>
+
+    <View
+        android:id="@+id/view00"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@+id/linearLayoutFav"
+        android:layout_marginLeft="@dimen/text_left_right_margin"
+        android:layout_marginRight="@dimen/text_left_right_margin"
+        android:layout_marginTop="7dp"
+        android:background="@android:color/darker_gray"></View>
+    <LinearLayout
+        android:id="@+id/linearLayoutCategory"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/view00"
+        android:layout_marginLeft="@dimen/text_margin"
+        android:layout_marginRight="@dimen/text_margin"
+        android:layout_marginBottom="7dp"
+        android:layout_marginTop="7dp"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/text_margin"
+            android:layout_marginRight="@dimen/text_margin"
+            android:layout_weight=".7"
+            android:text="@string/category"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            android:visibility="gone" />
+
+        <Spinner
+            android:id="@+id/spinCategory"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:prompt="@string/category"></Spinner>
+
+    </LinearLayout>
+
+    <View
+        android:id="@+id/view0"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@+id/linearLayoutCategory"
+        android:layout_marginLeft="@dimen/text_left_right_margin"
+        android:layout_marginRight="@dimen/text_left_right_margin"
+        android:layout_marginTop="7dp"
+        android:background="@android:color/darker_gray"></View>
+
+    <LinearLayout
+        android:id="@+id/linearLayoutBirthDay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/view0"
+        android:layout_marginLeft="5dp"
+        android:layout_marginBottom="7dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="7dp"
+        android:orientation="horizontal"
+        android:weightSum="1">
+
+        <TextView
+            android:id="@+id/tvBirthDay"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/linearLayoutEmail"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/text_margin"
+            android:layout_marginRight="@dimen/text_margin"
+            android:layout_weight=".2"
+            android:gravity="center_horizontal"
+            android:text="@string/birthday"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            android:visibility="visible" />
+
+        <LinearLayout
+            android:id="@+id/linearLayoutEmailBDMonth"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/text_margin"
+            android:layout_marginRight="@dimen/text_margin"
+            android:layout_weight=".45"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:text="@string/month"
+                android:textSize="@dimen/textSize"
+                android:textStyle="bold" />
+
+            <Spinner
+                android:id="@+id/spinMonth"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:prompt="@string/month"></Spinner>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linearLayoutEmailBDDay"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/text_margin"
+            android:layout_marginRight="@dimen/text_margin"
+            android:layout_weight=".45"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:text="@string/day"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+
+            <Spinner
+                android:id="@+id/spinDay"
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:prompt="@string/day"></Spinner>
+
+        </LinearLayout>
+    </LinearLayout>
+
+
+    <View
+        android:id="@+id/view"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@+id/linearLayoutBirthDay"
+        android:layout_marginLeft="@dimen/text_left_right_margin"
+        android:layout_marginRight="@dimen/text_left_right_margin"
+        android:layout_marginTop="20dp"
+        android:background="@android:color/darker_gray"></View>
+
+    <ListView
+        android:id="@+id/listViewRemindMe" android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/view"
+        android:layout_marginBottom="40dp"
+        android:layout_marginLeft="@dimen/text_left_right_margin"
+        android:layout_marginRight="@dimen/text_left_right_margin"
+        android:layout_marginTop="@dimen/text_left_right_margin"></ListView>
+
+    <Button
+        android:id="@+id/btnBirthDayReminder"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:onClick="click"
+        android:textColor="@color/white"
+        android:layout_marginBottom="5dp"
+        android:background="@color/colorPrimaryDark"
+        android:text="@string/remindme" />
+</RelativeLayout>

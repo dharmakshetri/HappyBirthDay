@@ -47,21 +47,22 @@
     <string name="message">Message</string>
     <string name="setalarm">Set Alarm</string>
     <string name="setnotification">Set Notification</string>
-    <string name="emialremindermessage">Only provide Email address for Birthday message in Birthday Time Otherwise leave Empty </string>
-    <string name="mobileremindermessage">Only provide Mobile number for Birthday message in Birthday Time Otherwise leave Empty</string>
-    <string name="emptymessae">Happy Birthday to a person that’s charming, talented and witty, and reminds me a lot of myself.</string>
+    <string name="emialremindermessage">Provide Email address Otherwise leave Empty </string>
+    <string name="mobileremindermessage">Provide Mobile Number Otherwise leave Empty</string>
+    <string name="emptymessae">Happy Birthday to a person that’s charming, talented and witty reminds me a lot of myself.</string>
 
     <string name="daysremaing">Days to go</string>
     <string name="todaybirthday">Today Birthday, wish to click</string>
+    <string name="add_birthday_message">Add Birthday For Reminder</string>
 
     <string name="favourite">Favourite</string>
     <string name="rate">Rate App</string>
 
     <string name="rta_dialog_title">Rate this app</string>
     <string name="rta_dialog_message">If you enjoy using this app, would you mind taking a moment to rate it? It won\'t take more than a minute. Thank you for your support!</string>
-    <string name="rta_dialog_ok">Rate now</string>
+    <string name="rta_dialog_ok">Rate Now</string>
     <string name="rta_dialog_cancel">Later</string>
-    <string name="rta_dialog_no">No, thanks</string>
+    <string name="rta_dialog_no">No, Thanks</string>
     <string name="no_fav">No Favourites yet, So please </string>
     <string name="banner_ad_unit_id">ca-app-pub-2457197007328169/5708420977</string>
     <string name="interstitial_ad_unit_id">ca-app-pub-2457197007328169/1577604274</string>

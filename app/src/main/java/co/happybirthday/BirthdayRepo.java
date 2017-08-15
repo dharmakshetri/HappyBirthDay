@@ -62,7 +62,7 @@ public class BirthdayRepo {
 
     public void updateFavourite(int fav, int sid) {
 
-        Log.e("Update Fav", "fav sttus=" + fav + " id =" + sid);
+        
         SQLiteDatabase db = dbHelper.getWritableDatabase();
         ContentValues values = new ContentValues();
 
