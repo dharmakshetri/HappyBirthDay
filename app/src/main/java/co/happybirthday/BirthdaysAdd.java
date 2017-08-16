@@ -86,7 +86,7 @@ public class BirthdaysAdd extends AppCompatActivity {
         //start ads
 
         //end ads
-        getSupportActionBar().setTitle("Add Birthday For Remainder");
+        getSupportActionBar().setTitle(getResources().getString(R.string.add_birthday_message));
         Intent intentBack = getIntent();
         birthdayId = intentBack.getIntExtra(Birthday.KEY_ID, 1);
         status = intentBack.getIntExtra(Birthday.Status, 0);
