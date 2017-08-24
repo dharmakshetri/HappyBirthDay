@@ -1,7 +1,7 @@
-# HappyBirthDay
+## HappyBirthDay Android App
 Birthday remainder application
 
-# Features
+## Features
 ● Handling all the design, build, deployment, debug & maintenance which allow to used remember birthday and missed birthday as well as  provided the feature to  set and save birthday with respective categories like friends, relatives, colleagues, relatives and others.
 
 ● Saved existing birthday list for favorites birthday for future purpose.
