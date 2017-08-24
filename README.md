@@ -1,23 +1,25 @@
-## HappyBirthDay Android App
+### HappyBirthDay Android App
 Birthday remainder application
 
-## Features
+### Features
 ● Handling all the design, build, deployment, debug & maintenance which allow to used remember birthday and missed birthday as well as  provided the feature to  set and save birthday with respective categories like friends, relatives, colleagues, relatives and others.
 
 ● Saved existing birthday list for favorites birthday for future purpose.
 
 ● Managing to send message and send email also provides the birthday messages ,which allows to set  notification when someone's birthday coming near future.
 
-# Cloning
+● Crashlytics for crash reporting
+## Cloning
 If you're only interested in the HappyBirthDay download source code and use them for your own use:
 
     git clone https://github.com/dharmakshetri/HappyBirthDay.git
 
 
 
-# Download From Google Play Store [Download](https://play.google.com/store/apps/details?id=co.happybirthday)
+### Download From Google Play Store [Download](https://play.google.com/store/apps/details?id=co.happybirthday)
 
-# Snapshots
+### Snapshots
+
 ---
 ![home](https://lh3.googleusercontent.com/lmAcQcE6wvM-B7tczNNeWlki7bRNwfAFCwEChPifIfsroLl6vRAQnM-hrjMwjNfHE9w=h310)
 ![add birthday](https://lh3.googleusercontent.com/ckK7j6Nk2BEg2bynMcB0YdVzCbr_-wTBHI7FmtzQ4Isu8qCon1MzupyfD76zrhySG9I=h310)
