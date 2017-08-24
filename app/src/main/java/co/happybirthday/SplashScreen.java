@@ -7,6 +7,9 @@ import android.util.Log;
 
 import java.util.Arrays;
 
+import com.crashlytics.android.Crashlytics;
+import io.fabric.sdk.android.Fabric;
+
 /**
  * Created by Dharma on 1/18/2016.
  */
@@ -15,6 +18,8 @@ public class SplashScreen extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.splachscreen);
+        Fabric.with(this, new Crashlytics());
+
         String []messages=getResources().getStringArray(R.array.messages);
         Message.listMesssages= Arrays.asList(messages);
 

@@ -47,6 +47,10 @@
             android:value="@integer/google_play_services_version" />
         <service android:name=".notification.ScheduleService" />
         <service android:name=".notification.NotifyService" />
+
+        <meta-data
+            android:name="io.fabric.ApiKey"
+            android:value="f2e805224a70702d6e89da0d339c573e64d5ec91"></meta-data>
     </application>
 
 </manifest>
